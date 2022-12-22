@@ -1,0 +1,40 @@
+.hour {
+  @apply h-7 bg-gray-600 text-xs flex items-center justify-center relative;
+}
+
+.hour:nth-child(2n) {
+  @apply bg-gray-700;
+}
+
+.hour:nth-child(24n + 1) {
+  @apply h-7 bg-green-600;
+}
+
+.hour.business {
+  @apply bg-blue-800;
+}
+
+.hour.business:nth-child(2n) {
+  @apply bg-blue-900;
+}
+
+.hour.current {
+  @apply bg-yellow-400 text-gray-900 !important;
+}
+
+.hour .label {
+  top: -18px;
+  @apply absolute left-2 text-gray-100 whitespace-nowrap;
+}
+
+.hour .label.right {
+  @apply left-auto right-2;
+}
+
+.hour .indicator {
+  @apply border-l py-8 absolute left-0;
+}
+
+.hour .indicator.right {
+  @apply left-auto right-0;
+}

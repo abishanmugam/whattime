@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+
+html,
+body {
+  color: #f5f5f5;
+  background-color: #111;
+  font-family: 'Recursive', sans-serif;
+}
+
+a {
+  @apply underline;
+}
+
+a:hover {
+  @apply font-bold;
+}
+
+.Toastify__toast--dark {
+  background-color: #212121 !important;
+}
+
+.Toastify__toast-body {
+  font-family: 'Recursive', sans-serif;
+  @apply text-sm;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.react-transform-component {
+  overflow: initial !important;
+}
